@@ -1,0 +1,527 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.desck {}
+
+.container {}
+
+.blocks__container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+	"column_001_row001" /* 1*/
+	"column_002_row001" /* 2*/
+    "column_001_row002" /* 3*/
+    "column_002_row002" /* 4*/
+    "column_004_row002" /* 5*/
+    "column_005_row002" /* 6*/
+    "column_006_row002" /* 7*/
+    "column_007_row002" /* 8*/
+    "column_001_row003" /* 9*/
+    "column_002_row003" /* 10*/
+    "column_004_row003" /* 11*/
+    "column_005_row003" /* 12*/
+    "column_006_row003" /* 13*/
+    "column_007_row003" /* 14*/
+    "column_001_row004" /* 15*/
+    "column_002_row004" /* 16*/
+    "column_003_row004" /* 17*/
+    "column_004_row004" /* 18*/
+}
+
+.block1 {
+    grid-area: "column_001_row001";
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #FFC8BA;
+}
+
+.block2 {
+    grid-area: "column_002_row001";
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+    background-color: #B5D8EB;
+
+
+}
+
+.block3 {
+    grid-area: "column_001_row002";
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    background-color: #93DFB8;
+
+}
+
+.block4 {
+    grid-area: "column_002_row002";
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    background-color: #FFBDD8;
+
+}
+
+.block5 {
+    grid-area: "column_004_row002";
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color: #EEEEEE;
+
+}
+
+.block6 {
+    grid-area: "column_005_row002";
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    background-color: #EEEEEE;
+
+}
+
+.block7 {
+    grid-area: "column_006_row002";
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    background-color: #EEEEEE;
+
+}
+
+.block8 {
+    grid-area: "column_007_row002";
+    grid-column: 7 / 8;
+    grid-row: 2 / 3;
+    background-color: #EEEEEE;
+
+}
+
+.block9 {
+    grid-area: "column_001_row003";
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-color: #EEEEEE;
+
+}
+
+.block10 {
+    grid-area: "column_002_row003";
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+    background-color: #EEEEEE;
+
+}
+
+.block11 {
+    grid-area: "column_004_row003";
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    background-color: #EEEEEE;
+
+}
+
+.block12 {
+    grid-area: "column_005_row003";
+    grid-column: 7 / 8;
+    grid-row: 3 / 4;
+    background-color: #EEEEEE;
+
+}
+
+.block13 {
+    grid-area: "column_006_row003";
+    grid-column: 2 / 3;
+    grid-row: 4;
+    background-color: #EEEEEE;
+
+}
+
+.block14 {
+    grid-area: "column_007_row003";
+    grid-column: 3 / 4;
+    grid-row: 4;
+    background-color: #EEEEEE;
+
+}
+
+.block15 {
+    grid-area: "column_001_row004";
+    grid-column: 4 / 5;
+    grid-row: 4;
+    background-color: #EEEEEE;
+
+}
+
+.block16 {
+    grid-area: "column_002_row004";
+    grid-column: 5 / 6;
+    grid-row: 4;
+    background-color: #EEEEEE;
+
+}
+
+.block17 {
+    grid-area: "column_003_row004";
+    grid-column: 6 / 7;
+    grid-row: 4;
+    background-color: #EEEEEE;
+}
+
+.block18 {
+    grid-area: "column_004_row004";
+    grid-column: 7 / 8;
+    grid-row: 4;
+    background-color: #EEEEEE;
+}
+
+@media(max-width: 1024px) {
+
+  .blocks__container {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+  	"column_001_row001" /* 1*/
+  	"column_002_row001" /* 2*/
+      "column_001_row002" /* 3*/
+      "column_002_row002" /* 4*/
+      "column_004_row002" /* 5*/
+      "column_005_row002" /* 6*/
+      "column_006_row002" /* 7*/
+      "column_007_row002" /* 8*/
+      "column_001_row003" /* 9*/
+      "column_002_row003" /* 10*/
+      "column_004_row003" /* 11*/
+      "column_005_row003" /* 12*/
+      "column_006_row003" /* 13*/
+      "column_007_row003" /* 14*/
+      "column_001_row004" /* 15*/
+      "column_002_row004" /* 16*/
+      "column_003_row004" /* 17*/
+      "column_004_row004" /* 18*/
+  }
+
+  .block1 {
+      grid-area: "column_001_row001";
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      background-color: #FFC8BA;
+  }
+
+  .block2 {
+      grid-area: "column_002_row001";
+      grid-column: 6 / 7;
+      grid-row: 1 / 2;
+      background-color: #B5D8EB;
+
+
+  }
+
+  .block3 {
+      grid-area: "column_001_row002";
+      grid-column: 1 / 7;
+      grid-row: 2 / 3;
+      background-color: #93DFB8;
+
+  }
+
+  .block4 {
+      grid-area: "column_002_row002";
+      grid-column: 1 / 7;
+      grid-row: 3 / 5;
+      background-color: #FFBDD8;
+
+  }
+
+  .block5 {
+      grid-area: "column_004_row002";
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+      background-color: #EEEEEE;
+
+  }
+
+  .block6 {
+      grid-area: "column_005_row002";
+      grid-column: 4 / 7;
+      grid-row: 5 / 6;
+      background-color: #EEEEEE;
+
+  }
+
+  .block7 {
+      grid-area: "column_006_row002";
+      grid-column: 1 / 4;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block8 {
+      grid-area: "column_007_row002";
+      grid-column: 4 / 7;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block9 {
+      grid-area: "column_001_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block10 {
+      grid-area: "column_002_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block11 {
+      grid-area: "column_004_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block12 {
+      grid-area: "column_005_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block13 {
+      grid-area: "column_006_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block14 {
+      grid-area: "column_007_row003";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block15 {
+      grid-area: "column_001_row004";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block16 {
+      grid-area: "column_002_row004";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block17 {
+      grid-area: "column_003_row004";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+  }
+
+  .block18 {
+      grid-area: "column_004_row004";
+      grid-column: 1 / 1;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+  }
+
+}
+
+@media(max-width: 480px) {
+  .blocks__container {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      grid-template-areas:
+  	"column_001_row001" /* 1*/
+  	"column_002_row001" /* 2*/
+      "column_001_row002" /* 3*/
+      "column_002_row002" /* 4*/
+      "column_004_row002" /* 5*/
+      "column_005_row002" /* 6*/
+      "column_006_row002" /* 7*/
+      "column_007_row002" /* 8*/
+      "column_001_row003" /* 9*/
+      "column_002_row003" /* 10*/
+      "column_004_row003" /* 11*/
+      "column_005_row003" /* 12*/
+      "column_006_row003" /* 13*/
+      "column_007_row003" /* 14*/
+      "column_001_row004" /* 15*/
+      "column_002_row004" /* 16*/
+      "column_003_row004" /* 17*/
+      "column_004_row004" /* 18*/
+  }
+
+  .block1 {
+      grid-area: "column_001_row001";
+      grid-column: 1 / 7;
+      grid-row: 2 / 3;
+      background-color: #FFC8BA;
+  }
+
+  .block2 {
+      grid-area: "column_002_row001";
+      grid-column: 1 / 6;
+      grid-row: 1 / 2;
+      background-color: #B5D8EB;
+
+
+  }
+
+  .block3 {
+      grid-area: "column_001_row002";
+      grid-column: 6 / 7;
+      grid-row: 1 / 2;
+      background-color: #93DFB8;
+
+  }
+
+  .block4 {
+      grid-area: "column_002_row002";
+      grid-column: 1 / 7;
+      grid-row: 3 / 5;
+      background-color: #FFBDD8;
+
+  }
+
+  .block5 {
+      grid-area: "column_004_row002";
+      grid-column: 1 / 7;
+      grid-row: 5 / 6;
+      background-color: #EEEEEE;
+
+  }
+
+  .block6 {
+      grid-area: "column_005_row002";
+      grid-column: 1 / 7;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block7 {
+      grid-area: "column_006_row002";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block8 {
+      grid-area: "column_007_row002";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block9 {
+      grid-area: "column_001_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block10 {
+      grid-area: "column_002_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block11 {
+      grid-area: "column_004_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block12 {
+      grid-area: "column_005_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block13 {
+      grid-area: "column_006_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block14 {
+      grid-area: "column_007_row003";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block15 {
+      grid-area: "column_001_row004";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block16 {
+      grid-area: "column_002_row004";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+
+  }
+
+  .block17 {
+      grid-area: "column_003_row004";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+  }
+
+  .block18 {
+      grid-area: "column_004_row004";
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      background-color: #EEEEEE;
+  }
+
+
+}
